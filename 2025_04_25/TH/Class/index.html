@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style type="text/css">
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container{
+    width: 800px;
+    height: 1000px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap-reverse; */
+    /* justify-content: space-evenly; */
+    /* align-items: baseline; */
+    align-content:space-between
+  }
+
+  .box {
+    height: 200px;
+    width: 200px;
+  }
+
+  .box1{
+    background-color: aquamarine;
+    height: 300px;
+  }
+
+  .box2{
+    background-color: blue;
+  }
+
+  .box3{
+    background-color: chartreuse;
+    height: 150px;
+  }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <h1>Box 1</h1>
+        </div>
+        <div class="box box2">
+            <p>Box 2</p>
+        </div>
+        <div class="box box3">
+            <h2>Box 3</h2>
+        </div>
+    </div>
+</body>
+</html>
