@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
   color: #333;
 }
@@ -266,8 +266,7 @@ footer {
 }
 
 .footer-left,
-.footer-center,
-.footer-right {
+.footer-center {
   margin: 10px 0;
 }
 
@@ -278,23 +277,4 @@ footer {
   font-size: 14px;
 }
 
-.footer-right a {
-  margin: 0 5px;
-  color: #444;
-  font-size: 16px;
-  border: 1px solid #bbb;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s;
-}
-
-.footer-right a:hover {
-  background-color: #2ecc71;
-  color: #fff;
-  border-color: #2ecc71;
-}
 
