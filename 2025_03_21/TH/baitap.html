@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2 style="background-color: orange; text-align: center; padding: 10px;">
+		PT Ứng dụng Web - THIẾT KẾ FORM ĐƠN GIẢN
+	</h2>
+
+	<form style=" text-align: center">
+        <table cellspacing="25" style=" text-align: center">
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text" name="hoten"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Số điện thoại</td>
+                <td><input type="tel" name="std"></td>
+            </tr>
+            <tr>
+            	<td>Quê quán</td>
+            	<td>
+            		<select name="thanhpho">
+                        <option>--Chọn thành phố--</option>
+                        <option>Hà Nội</option>
+                        <option>TP. Hồ Chí Minh</option>
+                        <option>Đà Nẵng</option>
+                        <option>Cần Thơ</option>
+                    </select>
+            	</td>
+            </tr>
+            <tr>
+            	<td>Giói tính</td>
+            	<td>
+					<input type="radio" name="gender" value="Nam">Nam
+                    <input type="radio" name="gender" value="Nữ">Nữ
+            	</td>
+            </tr>
+            <tr>
+                <td>Kỹ năng</td>
+                <td>
+                    <input type="checkbox" name="skills" value="HTML"> HTML
+                    <input type="checkbox" name="skills" value="CSS"> CSS
+                    <input type="checkbox" name="skills" value="JS"> JS
+                    <input type="checkbox" name="skills" value="Bootstrap"> BOOTSTRAP
+                </td>
+            </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>Giới thiệu bản thân</td>
+                <td><textarea name="about" rows="4" cols="30"></textarea></td>
+            </tr>
+        </table>
+    </form>
+
+    <p style="background-color: orange; text-align: center; padding: 5px">
+		<input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </p>
+</body>
+</html>
