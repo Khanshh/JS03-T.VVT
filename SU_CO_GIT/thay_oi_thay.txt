@@ -1,0 +1,5 @@
+em bi loi git ssh cua git do e dang dung ubuntu nen e ko de y va e dang reset lai git mong thay thong cam chu ko phai em den 1 luot moi push len dau thay a
+
+Mong thay thong cam cho em a
+
+Em cam on thay 
