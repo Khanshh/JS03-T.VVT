@@ -3,169 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chi tiêu thông minh</title>
+  <title>MoneyML PTIT-RIPT</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
-  <script src="app.js "></script>
 </head>
 <body>
-
-  <!-- INTRO SECTION -->
-  <section class="intro" id="intro">
-    <div class="intro-content">
-      <img src="static/Screenshot_from_2025-05-23_09-31-15-removebg-preview.png" alt="Logo" class="intro-logo">
-      <h1>Em chào thầy em là Phạm Nam Khánh</h1>
-      <p>Trước khi đến với bài em có điều muốn tâm sự với thầy😔</p>
-      <p>Em đã có định hướng riêng của mình là em sẽ đi theo hướng data scientist/machine learning/AI🤖</p>
-      <p>Vì thế có thể em làm web có thể sẽ ko đẹp bằng các bạn khác. Mong thầy thông cảm cho em ạ😎</p>
-      <p>Giờ thì thầy hãy uống 1 miếng nước, ăn 1 miếng bánh và xem trang web của em ạ😁</p>
-      <button onclick="enterSite()">Bài tập giữa kì</button>
-    </div>
-  </section>
-
-
   <!-- HEADER -->
   <header>
     <div class="logo">
-        <img src="static/Screenshot_from_2025-05-23_09-31-15-removebg-preview.png">
+      <img src="static/Screenshot_from_2025-05-23_09-31-15-removebg-preview.png">
     </div>
     <nav>
-      <a href="#">About us</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
       <a href="#">Career</a>
-      <a href="#">Vietnamese 🇻🇳</a>
+      <a href="#feature">Features</a>
     </nav>
+    <div class="logo-container">
+      <div class="logo-ptit"><img src="static/ptit-logo-removebg-preview.png"></div>
+      <div class="logo-ript"><img src="static/ript-removebg-preview.png"></div>
+    </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+  <!-- HOME SECTION -->
+  <section class="home">
     <h1><span>Simple way</span> <br> to manage <span>personal finances</span></h1>
-    <button>Sign up</button>
-    <button class="black">Log in</button>
+    <p class="subtitle">Track spending, budget smartly, and unlock AI-powered financial insights.</p>
+    <button onclick="toggleChatbot()">Chatbot Now</button>
   </section>
 
-  <!-- FEATURES -->
-  <section class="features">
-    <div class="feature-box">
-      <div class="icon">🤖</div>
-      <p>Chatbot AI</p>
-    </div>
-    <div class="feature-box">
-      <div class="icon">👥</div>
-      <p>1 Million+ users</p>
-    </div>
-    <div class="feature-box">
-      <div class="icon">💬</div>
-      <p>100K+ 5-star Reviews</p>
-    </div>
-    <div class="feature-box">
-      <div class="icon">🏅</div>
-      <p>App of the day</p>
-    </div>
-  </section>
-
-  <!-- MONEY TRACKER SECTION -->
-  <section class="tracker">
-    <div class="tracker-left">
-      <div class="tracker-card">
-          <img src="static/Transaction@4x.png" alt="">
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>--- About Us ---</h2>
+        <p class="description">MoneyML is a cutting-edge platform designed to transform personal finance management. Powered by artificial intelligence, we provide intuitive tools to optimize spending, set budgets, and achieve your financial goals. Crafted by PTIT and RIPT students, MoneyML is your trusted partner for smarter finance.</p>
+      </div>
+      <div class="about-features">
+        <h3>Why Choose MoneyML?</h3>
+        <ul>
+          <li>AI-driven insights tailored to your financial habits.</li>
+          <li>User-friendly interface for effortless budgeting.</li>
+          <li>Secure platform with top-tier data protection.</li>
+          <li>Real-time tracking for informed decisions.</li>
+        </ul>
       </div>
     </div>
-
-    <div class="tracker-right">
-      <h2>Simple money tracker</h2>
-      <p>It takes seconds to record daily transactions. Put them into clear and visualized categories such as Expense: Food, Shopping or Income: Salary, Gift.</p>
-    </div>
-  </section>
-
-  <!-- BUDGET SECTION -->
-  <section class="budget">
-    <div class="budget-left">
-      <h2>Painless budgeting</h2>
-      <p>It takes seconds to record daily transactions. Put them into clear and visualized categories such as Expense: Food, Shopping or Income: Salary, Gift.</p>
-    </div>
-
-    <div class="budget-right">
-      <div class="budget-card">
-        <img src="static/budget@4x.png" alt="">
-      </div>
-    </div>
-  </section>
-
-  <section class="place">
-      <div class="place-left">
-          <div class="place-card">
-              <img src="static/REPORT@4x.png" alt="">    
-          </div>
-      </div>
-
-      <div class="place-right">
-          <h2>The whole picture in one place</h2>
-          <p>One report to give a clear view on your spending patterns. Understand where your money comes and goes with easy-to-read graphs.</p>
-      </div>
   </section>
 
   <!-- SECTION: Features -->
-  <section class="features_2">
+  <section class="features" id="feature">
     <h2>Features our users love</h2>
-    <div class="features_2-grid">
-      <div class="feature_2-item">
+    <div class="features-grid">
+      <div class="feature-item">
         <img src="static/1.svg" alt="Multiple devices" />
         <h3>Multiple devices</h3>
         <p>Safely synchronize across devices with Bank standard security.</p>
       </div>
-      <div class="feature_2-item">
+      <div class="feature-item">
         <img src="static/2.svg" alt="Recurring transaction" />
         <h3>Recurring transaction</h3>
         <p>Get notified of recurring bills and transactions before due date.</p>
       </div>
-      <div class="feature_2-item">
+      <div class="feature-item">
         <img src="static/3.svg" alt="Travel mode" />
         <h3>Travel mode</h3>
         <p>All currencies supported with up-to-date exchange rate.</p>
       </div>
-      <div class="feature_2-item">
+      <div class="feature-item">
         <img src="static/4.svg" alt="Saving plan" />
         <h3>Saving plan</h3>
         <p>Keep track on savings process to meet your financial goals.</p>
       </div>
-      <div class="feature_2-item">
+      <div class="feature-item">
         <img src="static/5.svg" alt="Debt and loan" />
         <h3>Debt and loan</h3>
         <p>Manage your debts, loans and payment process in one place.</p>
       </div>
-      <div class="feature_2-item">
+      <div class="feature-item">
         <img src="static/7.svg" alt="Effortless entry" />
         <h3>Effortless transaction entry</h3>
         <p>Entry a transaction quickly and easily, manually or automatically.</p>
       </div>
     </div>
-  </section>
+  </sectio
 
-  <footer>
-    <div class="container footer-content">
-      <div class="footer-left">
-        <p>&copy; 2025 Finsify .,JSC. All rights reserved.</p>
-      </div>
-      <div class="footer-center">
-        <nav>
-          <a href="#">About us</a>
-          <a href="#">Career</a>
-          <a href="#">Blog</a>
-          <a href="#">Status</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-        </nav>
-      </div>
+  <!-- CHATBOT SECTION -->
+  <div class="chatbot-container" id="chatbot">
+    <div class="chatbot-header">
+      <span>MoneyML Chatbot</span>
+      <span class="close-btn" onclick="toggleChatbot()">×</span>
     </div>
-  </footer>
-
-  <div id="chatbot-widget">
-    <div id="chatbox">
-      <div id="messages"></div>
-      <input type="text" id="user-input" placeholder="Nhập câu hỏi..." />
-      <button onclick="sendMessage()">Gửi</button>
+    <div class="chatbot-body" id="chatbot-body">
+      <div class="chatbot-message bot">Chào bạn! Tôi là MoneyML Chatbot, sẵn sàng giúp bạn quản lý tài chính cá nhân. Hỏi tôi bất cứ điều gì nhé!</div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="chatbot-input" placeholder="Nhập tin nhắn...">
+      <button onclick="sendMessage()">
+        <i class='bx bx-send'></i>
+      </button>
     </div>
   </div>
 
+  <script src="app.js"></script>
 </body>
 </html>
