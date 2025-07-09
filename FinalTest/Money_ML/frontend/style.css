@@ -570,6 +570,8 @@ footer {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  display: flex; /* Dùng flex để quản lý bố cục */
+  flex-direction: column; /* Sắp xếp theo cột */
   overflow: hidden;
   opacity: 0;
   transform: translateY(50px);
@@ -600,12 +602,28 @@ footer {
 }
 
 .chatbot-body {
+  flex: 1; /* Chiếm toàn bộ không gian còn lại */
   padding: 15px;
-  height: calc(100% - 60px);
-  overflow-y: auto;
+  overflow-y: auto; /* Bật thanh cuộn dọc */
   display: flex;
   flex-direction: column;
   gap: 10px;
+  scrollbar-width: thin; /* Thanh cuộn mỏng hơn trên Firefox */
+  scrollbar-color: #2ecc71 #f1f1f1; /* Màu thanh cuộn */
+}
+
+/* Tùy chỉnh thanh cuộn cho Chrome/Safari */
+.chatbot-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatbot-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.chatbot-body::-webkit-scrollbar-thumb {
+  background: #2ecc71;
+  border-radius: 4px;
 }
 
 .chatbot-message {
@@ -624,16 +642,17 @@ footer {
 .chatbot-message.bot {
   background-color: #f1f1f1;
   color: #333;
+  white-space: pre-wrap;
+  line-height: 1.5;
   align-self: flex-start;
 }
 
 .chatbot-input {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   padding: 10px;
   background-color: #fff;
   border-top: 1px solid #eee;
+  display: flex; /* Dùng flex thay vì position: absolute */
+  align-items: center;
 }
 
 .chatbot-input input {
@@ -657,14 +676,14 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
   .service-content {
-    grid-template-columns: 1fr; /* 1 cột trên mobile */
-    grid-template-rows: repeat(6, auto); /* 6 hàng trên mobile */
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
   }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
   .service-content {
-    grid-template-columns: repeat(2, 1fr); /* 2 cột trên tablet */
-    grid-template-rows: repeat(3, auto); /* 3 hàng trên tablet */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
   }
 }

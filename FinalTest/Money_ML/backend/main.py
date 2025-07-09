@@ -50,7 +50,7 @@ async def chat(request: ChatRequest):
                 {"role": "user", "content": request.message}
             ],
             temperature=0.7,
-            max_tokens=150
+            max_tokens=250
         )
         reply = response.choices[0].message.content.strip()
         print(f"Phản hồi: {reply}")
